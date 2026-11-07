@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🌤 Weather Dashboard</h1>
+            <p>Check real-time weather anywhere</p>
+        </header>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="message"></p>
+
+        <section class="weather-card">
+
+            <h2 id="cityName">Search Your City</h2>
+            <p id="date">Current Weather</p>
+
+            <div class="weather-icon" id="weatherIcon">🌤️</div>
+
+            <h1 id="temperature">--°C</h1>
+            <h3 id="description">Weather Condition</h3>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>💧</span>
+                    <h3 id="humidity">--%</h3>
+                    <p>Humidity</p>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <h3 id="wind">-- km/h</h3>
+                    <p>Wind Speed</p>
+                </div>
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <h3 id="feelsLike">--°C</h3>
+                    <p>Feels Like</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Weather Dashboard | Built with HTML, CSS & JavaScript</p>
+            <p>Weather data by Open-Meteo</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

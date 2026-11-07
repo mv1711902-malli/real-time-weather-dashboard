@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f4c81, #38b6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #0759b5;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+    font-size: 15px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    border-color: #0875e1;
+}
+
+.search-box button {
+    padding: 14px 20px;
+    background: #0866d9;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.search-box button:hover {
+    background: #034da8;
+}
+
+#message {
+    text-align: center;
+    color: #e53935;
+    margin: 12px 0;
+    min-height: 20px;
+}
+
+.weather-card {
+    text-align: center;
+    background: #f1f7ff;
+    padding: 25px 15px;
+    border-radius: 15px;
+}
+
+.weather-card h2 {
+    color: #222;
+    font-size: 25px;
+}
+
+#date {
+    color: #777;
+    margin: 10px 0;
+}
+
+.weather-icon {
+    font-size: 75px;
+    margin: 15px 0;
+}
+
+#temperature {
+    color: #0866d9;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#description {
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.detail {
+    background: white;
+    padding: 18px 5px;
+    border-radius: 12px;
+}
+
+.detail span {
+    font-size: 25px;
+}
+
+.detail h3 {
+    color: #0759b5;
+    font-size: 17px;
+    margin: 10px 0 5px;
+}
+
+.detail p {
+    color: #777;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .search-box button {
+        padding: 12px;
+    }
+
+    .detail {
+        padding: 15px 3px;
+    }
+
+    .detail h3 {
+        font-size: 14px;
+    }
+}
